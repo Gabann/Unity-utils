@@ -1,2 +1,2 @@
 # Unity-utils
-This repo contains helpful QOL methods to unity
+An unity package that adds a variety of helpful QOL methods to unity
