@@ -1,11 +1,12 @@
 {
   "name": "com.gaban-entertainment.unity-utils",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "displayName": "Unity Utils",
-  "description": "This packages adds various helpful QOL methods to unity",
+  "description": "This packages adds various helpful extension methods to unity",
   "unity": "2019.1",
   "author": {
     "name": "Gaban D",
     "email": "gabin.deboulogne@gmail.com"
-  }
+  },
+  "type": "tool"
 }
