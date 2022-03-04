@@ -60,4 +60,28 @@ public static class TransformUtils
 		t.localRotation = Quaternion.identity;
 		t.localScale = Vector3.one;
 	}
+	
+	/// <summary>
+    /// Rotate the given transform towards the target vector in 2d space
+    /// </summary>
+    /// <returns></returns>
+    public static void RotateToward2D(this Transform t, Vector3 target)
+    {
+    	Vector3 direction = (target - t.position).normalized;
+    	float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+    	t.rotation = Quaternion.Euler(0, 0, angle);
+    }
+    
+	/// <summary>
+    /// Rotate the given transform towards the target transform in 2d space
+    /// </summary>
+    /// <returns></returns>
+    public static void RotateToward2D(this Transform t, Transform target)
+    {
+    	Vector3 direction = (target.position - t.position).normalized;
+    	float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+    	t.eulerAngles = new Vector3(0, 0, angle);
+    }
 }
