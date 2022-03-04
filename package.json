@@ -1,6 +1,6 @@
 {
   "name": "com.gaban-entertainment.unity-utils",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "displayName": "Unity Utils",
   "description": "This packages adds various helpful extension methods to unity",
   "unity": "2019.1",
